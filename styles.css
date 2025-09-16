@@ -1,1 +1,86 @@
 /*  your css code here. If applicable */
+body {
+	background: #f6f7fb;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.otp-card {
+	background: #fff;
+	border: 2px solid #111;
+	border-radius: 16px;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+	width: 800px;
+	max-width: 90vw;
+	padding: 32px 0 32px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#verification_heading {
+	font-size: 2.3em;
+	font-weight: 600;
+	text-align: center;
+	margin: 0 0 16px 0;
+}
+
+#verification_subtext {
+	text-align: center;
+	font-size: 1.15em;
+	margin: 0 0 32px 0;
+}
+
+.code-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+	margin-bottom: 32px;
+}
+
+.code {
+	width: 90px;
+	height: 120px;
+	border-radius: 8px;
+	border: 1.5px solid #ccc;
+	background: #fbfbfb;
+	font-size: 4.5em;
+	text-align: center;
+	color: #999;
+	outline: none;
+	transition: border 0.2s;
+	margin: 0;
+}
+
+.code:focus {
+	border: 2.5px solid #444;
+	background: #fff;
+	color: #444;
+}
+
+.design-note {
+	margin-top: 12px;
+	padding: 12px 24px;
+	background: #eee;
+	color: #777;
+	border-radius: 8px;
+	font-size: 1em;
+	text-align: center;
+}
+
+@media (max-width: 900px) {
+	.code {
+		width: 55px;
+		height: 70px;
+		font-size: 2.5em;
+	}
+}
